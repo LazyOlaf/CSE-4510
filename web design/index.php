@@ -53,6 +53,12 @@
         <li class="nav-item">
           <a class="nav-link" href="http://localhost/retro_cafe/web%20design%20(3)/menu/index.html">Unique Menu</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost/retro_cafe/web%20design%20(4)/aboutreview/index.php">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost/retro_cafe/webloginpage/index.html">Log In</a>
+        </li>
       </ul>
 
       </div>
@@ -131,7 +137,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <h1>CHOOSE & ENJOY</h1>
-            <p>Cafe Reto Unique Food </br> For Unique Taste
+            <p>Cafe Retro Unique Food </br> For Unique Taste
         </div>
         <div class="row mt-5">
           <div class="col-md-4 text-center wow bounceInLeft" data-wow-duration="2s"data-wow-delay="0.2s">
