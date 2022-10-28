@@ -17,7 +17,7 @@ font-family: 'Montserrat', sans-serif;*/
     font-weight: bold;
     font-size: 20px;
     text-align: right;
-    margin-right:10px;
+    margin-right:50px;
     color: #3d2514;
 
 
@@ -43,8 +43,6 @@ font-family: 'Montserrat', sans-serif;*/
     height: 100vh;
 
     width: 100%;
-
-    background-image: url(../img/pic1.png);
     margin-bottom: 100px;
 
     position: absolute;
@@ -55,9 +53,9 @@ font-family: 'Montserrat', sans-serif;*/
 
 {
 
-    width: 1266px;
+    width: 1350px;
 
-    height: 559px;
+    height: 500px;
 
     position: absolute;
 
@@ -73,11 +71,13 @@ font-family: 'Montserrat', sans-serif;*/
 
 }
 
-.navigation-bar
+.navbar
 
 {
-
-    display: flex;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    display: flex !important;
+    justify-content: space-between!important;
 
     align-items: center;
 
@@ -86,8 +86,6 @@ font-family: 'Montserrat', sans-serif;*/
     padding-left: 80px;
 
     padding-right: 30px;
-
-    padding-top: 20px;
 
 }
 
@@ -141,9 +139,11 @@ nav ul li
 
     display: inline-block;
 
-    margin-right: 50px;
+    margin-left:  5px;
 
-    margin-top: 5px;
+    margin-right: 15px;
+
+    margin-top: 0px;
 
 }
 
@@ -197,13 +197,13 @@ nav ul li a:hover
 
 {
 
-    width: 300px;
+    width: 400px;
 
-	height: 400px;
+	height: 500px;
 
 	position: relative;
 
-    top: 50px;
+    top: 75px;
 
     left: 120px;
 
@@ -249,7 +249,7 @@ nav ul li a:hover
 
 	width: 100%;
 
-	margin: 0 0 15px;
+	margin: 0 15 25px;
 
 	padding: 15px;
 
