@@ -12,9 +12,12 @@ mysqli_select_db($con,'retrocafe');
 
 $name =$_POST['name'];
 $email =$_POST['email'];
-$menu =$_POST['menu'];
+$title =$_POST['title'];
+$serving =$_POST['serving'];
+$ingredient =$_POST['ingredient'];
+$direction =$_POST['direction'];
 
-$query= " insert into useraddedmenu (name,email,menu) values ('$name','$email','$menu') ";
+$query= "insert into useraddedmenu (name,email,title,serving,ingredient,description) values ('$name','$email','$title','$serving','$ingredient','$direction')";
 mysqli_query($con,$query);
 header('location:http://localhost/retro_cafe/web%20design%20(3)/menu/confirmation.html');
 ?> 

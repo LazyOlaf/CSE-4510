@@ -53,6 +53,12 @@
         <li class="nav-item">
           <a class="nav-link active new" aria-current="page" href="#">Unique Menu</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost/retro_cafe/web%20design%20(4)/aboutreview/index.php">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost/retro_cafe/webloginpage/index.html">Log In</a>
+        </li>
 
       </ul>
 
@@ -107,7 +113,7 @@
                 </div>
                 <h3>chicken pizza</h3>
                 <p>bbq chicken,cheese,capsicum,mayo, sauce, chicken salami</p>
-                <a class="btn">order now</a>
+                <a href="http://localhost/Retro_cafe/cart%20system/index.html" class="btn">order now</a>
                 <span class="price">৳430.00</span>
             </div>
         </div>
@@ -298,15 +304,22 @@
  <section class="form-section">
    <div class="container">
     <div class="row text-center">
-      <h3 class="wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.8s">Customize Menu</h3>
-      <h1 class="wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.8s">SUBMIT YOUR OWN MENU</h1>
+      <h3 class="wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.8s">Customize Recipe</h3>
+      <h1 class="wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.8s">SUBMIT YOUR OWN RECIPE</h1>
       <form action="http://localhost/retro_cafe/web%20design%20(3)/menu/php/useraddedmenu.php" method="post">
         <div class="box">
-          <input type="text" name="name" placeholder="Name">
-          <input type="email" name="email" placeholder="Email" class="name">
+          <input type="text" name="name" placeholder="Your name">
+          <input type="email" id="email" name="email" placeholder="Email" class="name">
         </div>
         <div class="box">
-          <input type="text" name="menu" placeholder="your menu">
+          <input type="text" name="title" placeholder="Recipe Title">
+          <input type="number" min="1" name="serving" placeholder="Number of servings" class="name">
+        </div>
+        <div class="box">
+          <input type="text" name="ingredient" placeholder="Ingredients" rows="50" cols="50">
+          <input type="text" name="direction" placeholder="Directions" class="name">
+        </div>
+        <div class="box">
           <input type="submit" name="" value="submit" class="table" >
         </div>
       </form>
