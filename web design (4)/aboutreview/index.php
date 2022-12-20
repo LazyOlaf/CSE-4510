@@ -54,13 +54,29 @@
           <a class="nav-link" href="http://localhost/web%20design%20(2)/order/index.html">ORDER</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost/retro_cafe/web%20design%20(3)/menu/index.html">Unique Menu</a>
+          <a class="nav-link" href="http://localhost/retro_cafe/web%20design%20(3)/menu/index.php">Unique Menu</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active new ms-2 " aria-current="page" href="#">ABOUT US</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost/retro_cafe/webloginpage/index.html">Log In</a>
+          <a class="nav-link" href="http://localhost/retro_cafe/webloginpage/php/logout.php">
+            <?php 
+                $con = mysqli_connect('localhost','root');
+                if($con){
+                    mysqli_select_db($con, 'retrocafe');
+
+                    $query= "SELECT stat FROM loginstat where statval=1";
+                    $result=mysqli_query($con,$query);
+                    $row = mysqli_fetch_array($result);
+                    
+                    echo $row['stat'];
+                    }else{
+                        echo "no connection";
+                 }
+
+            ?>
+          </a>
         </li>
 
       </ul>
@@ -125,7 +141,7 @@ Our staff understand that this is your day and that we need to be polite and cou
                     <span>24/7 service</span>
                 </div>
             </div>
-            <a href="http://localhost/retro_cafe/web%20design%20(6)/index.html" class="btn">learn more</a>
+            <a href="http://localhost/retro_cafe/web%20design%20(6)/index.php" class="btn">learn more</a>
         </div>
 
     </div>
