@@ -48,16 +48,31 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active new" aria-current="page" href="#">Home</a>
+          <a class="nav-link active new" aria-current="page" href="http://localhost/retro_cafe/web%20design/index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost/retro_cafe/web%20design%20(3)/menu/index.html">Unique Menu</a>
+          <a class="nav-link" href="http://localhost/retro_cafe/web%20design%20(3)/menu/index.php">Unique Menu</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://localhost/retro_cafe/web%20design%20(4)/aboutreview/index.php">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost/retro_cafe/webloginpage/index.html">Log In</a>
+          <a class="nav-link" href="http://localhost/retro_cafe/webloginpage/php/logout.php">
+            <?php 
+                $con = mysqli_connect('localhost','root');
+                if($con){
+                    mysqli_select_db($con, 'retrocafe');
+
+                    $query= "SELECT stat FROM loginstat where statval=1";
+                    $result=mysqli_query($con,$query);
+                    $row = mysqli_fetch_array($result);
+                    
+                    echo $row['stat'];
+                    }else{
+                        echo "no connection";
+                 }
+            ?>
+          </a>
         </li>
       </ul>
 
@@ -122,7 +137,7 @@
           </div>
           <div class="row">
             <div class="col-md-12 text-center">
-              <a href="http://localhost/retro_cafe/web%20design%20(3)/menu/index.html"><button class="button-design wow bounceIn" data-wow-duration="1s"data-wow-delay="0.3s">Cafe Retro Special</button></a>
+              <a href="http://localhost/retro_cafe/web%20design%20(3)/menu/index.php"><button class="button-design wow bounceIn" data-wow-duration="1s"data-wow-delay="0.3s">Cafe Retro Special</button></a>
               
             </div>
           </div>
