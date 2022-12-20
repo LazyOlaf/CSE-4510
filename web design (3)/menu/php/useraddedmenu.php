@@ -19,5 +19,5 @@ $direction =$_POST['direction'];
 
 $query= "insert into useraddedmenu (name,email,title,serving,ingredient,description) values ('$name','$email','$title','$serving','$ingredient','$direction')";
 mysqli_query($con,$query);
-header('location:http://localhost/retro_cafe/web%20design%20(3)/menu/confirmation.html');
+header('location:http://localhost/retro_cafe/web%20design%20(3)/menu/index.php');
 ?> 
